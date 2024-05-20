@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>사진작가 이름</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://www.freeiconspng.com/uploads/sky-clouds-background-png-1.png'); /* 구름 이미지 URL */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column; /* 세로 배치에서 가로 배치로 변경 */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bio {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+}
+
+.link-button::before {
+  content: attr(data-icon);
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-section">
+      <img src="https://www.freeiconspng.com/uploads/rabbit-png-2.png" alt="토끼 프로필 사진" class="profile-image">
+      <h1>사진작가 이름</h1>  </div>
+    <p class="bio">간단한 자기소개 (사진 분야, 경력 등)</p>
+
+    <div class="links">
+      <a href="포트폴리오 웹사이트 URL" class="link-button" data-icon="❤️">포트폴리오</a>
+      <a href="인스타그램 URL" class="link-button" data-icon="♣️">Instagram</a>
+      <a href="이메일 주소" class="link-button" data-icon="✉️">문의하기</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 사진작가 이름</p>
+  </footer>
+</body>
+</html>
